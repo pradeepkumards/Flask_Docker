@@ -12,7 +12,7 @@ import subprocess
 
 #Static variables
 LOG_PATH = "tmp/"
-OPRATOR_FILE = "oprator_input_file.yaml"
+OPRATOR_FILE = "operator_input_file.yaml"
 JSON_PAYLOAD = "action_list.json"
 
 #Directory for logs and done file
