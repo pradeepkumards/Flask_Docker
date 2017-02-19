@@ -23,6 +23,7 @@ A pyhton image from Docker hub is used as a base image.
 
 
 SERVER -
+
 Step 1:
 Download the server tar bundle from the deliver_repo from the GIT and untar the same
 >tar -xzvf docker_server.tar.gz
@@ -32,7 +33,7 @@ docker_server/
 			-minion_server_app.py
 			-Dockerfile
 
-note: description of above files can be found in minion_activity.docx document.
+note: description of above files can be found in Activity_description_guide.docx document.
 
 Step 2:
 Build image
@@ -44,13 +45,14 @@ Spawn container
 >docker run -d -p 5000:5000 minion_server
 
 CLIENT -
+
 Step 1:
 Download the client tar bundle from the deliver_repo from the GIT and untar the same
 >tar -xzvf docker_client.tar.gz
 docker_server/
 			-dependency.txt
 			-action_list.json
-			-oprator_input_file.yaml
+			-operator_input_file.yaml
 			-minion_client_app.py
 			-Dockerfile
 
