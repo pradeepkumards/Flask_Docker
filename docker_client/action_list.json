@@ -1,0 +1,5 @@
+{
+"title":"Executing the commands",
+"action": ["touch", "mkdir"],
+"description": "Above shell commands will be executed on all minion servers"
+}
