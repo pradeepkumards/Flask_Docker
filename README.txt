@@ -56,14 +56,17 @@ docker_server/
 			-minion_client_app.py
 			-Dockerfile
 
-note: description of above files can be found in minion_activity.docx document.
+note: description of above files can be found in Activity_description_guide.docx document.
 
 Step 2:
-Build image
+Provide minion server IP addresses in operator_input_file.yaml file.
 >cd docker_client/
->docker build -t minion_client:latest .
 
 Step 3:
+Build image
+>docker build -t minion_client:latest .
+
+Step 4:
 Spawn container
 >docker run -d minion_client
 
@@ -73,7 +76,6 @@ pyaml - yaml parser library from python
 
 Improvements:-
 Both server and client tools can be improvised for robustness and error handling.
-
 
 Versioning:-
 1.0
